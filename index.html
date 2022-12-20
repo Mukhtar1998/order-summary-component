@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Order summary card</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+        text-decoration: none;
+      }
+      a {
+        color: blue;
+      }
+      img {
+        width: 100%;
+        display: block;
+      }
+      .container {
+        min-height: 100vh;
+      }
+      .music-icon {
+        width: 50px;
+        height: 50px;
+      }
+      .music {
+        display: flex;
+        align-self: flex-start;
+        justify-content: space-between;
+        background-color: rgb(222, 221, 219);
+        width: 100%;
+        border-radius: 10px;
+        padding: 10px;
+      }
+      .prise {
+        display: flex;
+        flex-direction: row;
+        border-radius: 10px;
+        gap: 10px;
+      }
+      .row {
+        width: 100%;
+        display: flex;
+      }
+      .change {
+        align-self: center;
+      }
+      .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        background: url(./images/pattern-background-desktop.svg) center
+          no-repeat;
+      }
+
+      .cart {
+        width: min(400px, 100%);
+        min-height: 500px;
+        border-radius: 10px;
+        background-color: white;
+      }
+      .cart > * {
+        border-radius: 10px 10px 0 0;
+      }
+      .music {
+        display: flex;
+      }
+      .cart-text {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        padding: 30px;
+        gap: 20px;
+      }
+
+      .button {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        gap: 10px;
+      }
+      .white-btn {
+        background-color: white;
+        color: black;
+      }
+      .button > * {
+        box-shadow: 1px 3px 10px 3px rgba(0, 0, 255, 0.2);
+      }
+      input {
+        border: none;
+        font-weight: 700;
+        font-size: 15px;
+        border-radius: 10px;
+        padding: 15px;
+        color: white;
+        background-color: hwb(228 19% 23%);
+      }
+      input:hover {
+        background-color: #8f9eec;
+        cursor: pointer;
+      }
+      @media (max-width: 800px) {
+        .container {
+          background: url(./images/pattern-background-mobile.svg) center
+            no-repeat;
+          padding: 20px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="cart">
+        <img src="./images/illustration-hero.svg" alt="hero" srcset="" />
+
+        <div class="cart-text">
+          <h1>Order Summary</h1>
+          <p>
+            You can now listen to millions of songs, audiobooks, and podcasts on
+            any device anywhere you like!
+          </p>
+
+          <div class="music">
+            <div class="prise">
+              <img
+                class="music-icon"
+                src="./images/icon-music.svg"
+                alt="music"
+                srcset=""
+              />
+              <div class="details">
+                <h3>Annual Plan</h3>
+                <label for="prise">$59.99/year</label>
+              </div>
+            </div>
+            <a class="change" href="#">Change</a>
+          </div>
+          <div class="button">
+            <input class="blue-btn" type="button" value=" Proceed to Payment" />
+            <input class="white-btn" type="button" value="Cancel Order " />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Your Name Here</a>.
+    </div> -->
+  </body>
+</html>
